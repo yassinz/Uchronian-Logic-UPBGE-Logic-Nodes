@@ -748,7 +748,7 @@ class NLAbstractNode(NetLogicStatementGenerator):
 
 class NLConditionNode(NLAbstractNode):
     def init(self, context):
-        self.use_custom_color = True
+        self.use_custom_color = False
         self.color = CONDITION_NODE_COLOR
 
     pass
@@ -756,7 +756,7 @@ class NLConditionNode(NLAbstractNode):
 
 class NLActionNode(NLAbstractNode):
     def init(self, context):
-        self.use_custom_color = True
+        self.use_custom_color = False
         self.color = ACTION_NODE_COLOR
 
     pass
@@ -764,7 +764,7 @@ class NLActionNode(NLAbstractNode):
 
 class NLActuatorNode(NLAbstractNode):
     def init(self, context):
-        self.use_custom_color = True
+        self.use_custom_color = False
         self.color = ACTION_NODE_COLOR
 
     pass
@@ -772,7 +772,7 @@ class NLActuatorNode(NLAbstractNode):
 
 class NLParameterNode(NLAbstractNode):
     def init(self, context):
-        self.use_custom_color = True
+        self.use_custom_color = False
         self.color = PARAMETER_NODE_COLOR
 
     pass
@@ -833,7 +833,7 @@ class NLSocketLogicTree(bpy.types.NodeSocket, NetLogicSocketType):
                 "value",
                 bpy.data,
                 'node_groups',
-                icon='OUTLINER',
+                icon='NODETREE',
                 text=''
             )
 
